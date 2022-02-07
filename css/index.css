@@ -1,0 +1,79 @@
+*{
+    font-family: 'Fraunces', 'serif';
+    color: white;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.prueba{
+    display: flex;
+    padding: 5px;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(30, 26, 49);
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #202020;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+.calculadora>button{
+    cursor: pointer;
+    margin: 3px;
+    padding: 0;
+    border-radius: 20px;
+    font-size: 1.5em;
+    border:none;
+    background-color: black;
+    color: white;
+    
+}
+
+.outpu{
+    grid-column: 1/-1;
+    margin: 3px;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 20px;
+    border: none;
+}
+
+.outpu .display{
+    color: black;
+    font-size: 1.35rem;
+    text-align: right;
+    display: flex;
+    margin: 5px 5px 10px;
+}
+
+.calculadora>button:hover{
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.col2{
+    grid-column: span 2;
+}
+.col3{
+    grid-column: span 3;
+}
